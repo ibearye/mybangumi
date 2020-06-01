@@ -24,6 +24,7 @@ git clone https://github.com/ibearye/mybangumi.git
 
 ```
 <!-- 资源路径请根据实际情况修改 -->
+
 <script src="./bilibangumi.min.js"></script>
 ```
 
