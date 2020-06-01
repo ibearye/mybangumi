@@ -23,7 +23,7 @@ git clone https://github.com/ibearye/mybangumi.git
 引入 `bilibangumi.min.js` 和 `bilibangumi.min.css` 文件:
 
 ```
-//资源路径请根据实际情况修改
+<!-- 资源路径请根据实际情况修改 -->
 <script src="./bilibangumi.min.js"></script>
 ```
 
