@@ -2,6 +2,10 @@
 
 获取自己在B站的追番数据
 
+**原理**
+
+通过反向代理官方接口，使用CORS解决跨域问题。
+
 ## 安装
 
 ***B站用户的隐私设置中，请公开追番追剧选项***
@@ -29,7 +33,7 @@ git clone https://github.com/ibearye/mybangumi.git
 Bangumi(Object optoins)
 ```
 
-`options`为配置选项，例如：
+`options`为配置选项，一个简单的例子：
 
 ```
 Bangumi({
@@ -42,33 +46,36 @@ Bangumi({
 
 方法 `Bangumi(Object optoins)` 需传入一个配置对象，该对象具有如下属性：
 
-***container***
+**\*\*container\*\***
 
 类型：string，必填，容器的class。
 
-***vmid***
+**\*\*vmid\*\***
 
 类型：string，必填，用户的id。
 
-***ps***
+**\*\*ps\*\***
 
 类型：int，选填，每页显示数目，默认：15。
 
-***defaultStatus***
+**\*\*defaultStatus\*\***
 
 类型：int，选填，优先显示何种追番状态的番剧，它有四个可选值：
 
 0：全部
+
 1：想看
+
 2：在看
+
 3：看过
 
 默认：0。
 
-***showScore***
+**\*\*showScore\*\***
 
 类型：bool，选填，是否显示评分，默认：true。
 
-***showBar**
+**\*\*showBar\*\***
 
 类型：bool，选填，是否显示导航条，默认：true
