@@ -8,7 +8,9 @@
 
 ## 安装
 
-***B站用户的隐私设置中，请公开追番追剧选项***
+**B站用户的隐私设置中，请公开追番追剧选项**
+
+安装
 
 ```
 git clone https://github.com/ibearye/mybangumi.git
