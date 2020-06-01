@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bilibangumi.min.css">
+    <script src="./bilibangumi.min.js"></script>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: PingFang SC,Hiragino Sans GB,Microsoft YaHei,STHeiti,WenQuanYi Micro Hei,Helvetica,Arial,sans-serif;
+        }
+
+        a{
+            color: #999;
+        }
+
+        .container{
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 45px;
+            padding: 32px 25px;
+            background-color: #fafafa;
+        }
+
+        .logo img{
+            height: 45px;
+        }
+
+        .menu{
+            display: flex;
+            list-style: none;
+        }
+
+        .menu li{
+            display: flex;
+        }
+
+        .menu a{
+            position: relative;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 2.5;
+        }
+
+        .menu a:hover{
+            color: #000;
+        }
+
+        .menu li:first-child a{
+            color: #000;
+        }
+
+        footer{
+            margin-top: 32px;
+            padding: 40px 0;
+            font-size: 12px;
+            text-align: center;
+            color: #aaa;
+        }
+
+        @media screen and (max-width: 880px) {
+            .container{
+                margin: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><a href="javascript: location.reload()" class="img"><img src="https://static.nooooe.cn/demosite-logo.svg	" alt="logo"></a></div>
+        <ul class="menu">
+            <li><a href="javascript: location.reload()">Demo</a></li>
+            <li><a href="Download">Download</a></li>
+            <li><a href="https://bearye.cn">Blog</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="bangumi"></div>
+    </div>
+
+    <script>
+        Bangumi({
+            container: 'bangumi',
+            vmid: '29010244',
+            ps: 15,
+            showBar: true,
+            defaultStatus: 0,
+            showScore: false
+        })
+    </script>
+
+    <footer>
+        - code by bearye
+    </footer>
+    
+</body>
+</html>
