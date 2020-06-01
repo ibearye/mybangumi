@@ -49,19 +49,19 @@ Bangumi({
 
 方法 `Bangumi(Object optoins)` 需传入一个配置对象，该对象具有如下属性：
 
-**\*\*container\*\***
+**container**
 
 类型：string，必填，容器的class。
 
-**\*\*vmid\*\***
+**vmid**
 
 类型：string，必填，用户的id。
 
-**\*\*ps\*\***
+**ps**
 
 类型：int，选填，每页显示数目，默认：15。
 
-**\*\*defaultStatus\*\***
+**defaultStatus**
 
 类型：int，选填，优先显示何种追番状态的番剧，它有四个可选值：
 
@@ -75,10 +75,10 @@ Bangumi({
 
 默认：0。
 
-**\*\*showScore\*\***
+**showScore**
 
 类型：bool，选填，是否显示评分，默认：true。
 
-**\*\*showBar\*\***
+**showBar**
 
 类型：bool，选填，是否显示导航条，默认：true
