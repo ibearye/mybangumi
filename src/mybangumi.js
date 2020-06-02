@@ -34,8 +34,8 @@ let Bangumi = options => {
 
         menus[0].innerText = '全部';
         menus[1].innerText = '想看';
-        menus[2].innerText = '看过';
-        menus[3].innerText = '在看';
+        menus[2].innerText = '在看';
+        menus[3].innerText = '看过';
 
 
         menus[followStatus].className = 'bangumi_menu bangumi_menu_current';
