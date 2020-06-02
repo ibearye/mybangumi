@@ -4,7 +4,8 @@
 
 **原理**
 
-通过反向代理官方接口，使用CORS解决跨域问题。
+ - 通过反向代理官方接口，使用CORS解决跨域问题；
+ - 伪造请求代理封面接口，解决官方图片防盗链限制。
 
 ## 安装
 
@@ -20,12 +21,14 @@ git clone https://github.com/ibearye/mybangumi.git
 
 ## 引入
 
-引入 `bilibangumi.min.js` 和 `bilibangumi.min.css` 文件:
+引入 `mybangumi.min.js` 和 `mybangumi.min.css` 文件:
 
 ```
 <!-- 资源路径请根据实际情况修改 -->
 
-<script src="./bilibangumi.min.js"></script>
+<link rel="stylesheet" href="./mybangumi.min.css">
+<script src="./mybangumi.min.js"></script>
+
 ```
 
 ## 快速使用

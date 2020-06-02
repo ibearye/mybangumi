@@ -74,7 +74,7 @@ let Bangumi = options => {
             return;
         };
         isLoading = true;
-        XHR.open('GET', 'https://api.thebearsoft.cn/bilibangumi?ps=' + ps + '&pn=' + page + '&follow_status=' + followStatus + '&vmid=' + vmid, true);
+        XHR.open('GET', 'https://api.thebearsoft.cn/v1/mybangumi/list?ps=' + ps + '&pn=' + page + '&follow_status=' + followStatus + '&vmid=' + vmid, true);
         XHR.send();
     };
     
@@ -90,8 +90,10 @@ let Bangumi = options => {
             itemCover.className = 'bangumi_cover';
             itemTitle.className = 'bangumi_title';
             itemA.target = '_blank';
-            itemA.href = item.url;
-            itemCover.src = item.cover.replace(/^http\:\/\//, 'https://');
+            itemA.href = item.url
+            let coverUrl = item.cover.replace(/^http\:\/\//, 'https://');
+            let coverName = coverUrl.match(/[^/]+(?!.*[png|jpg|jpeg])$/);
+            itemCover.src = 'https://api.thebearsoft.cn/v1/mybangumi/img/?coverUrl=' + encodeURIComponent(coverUrl) + '&coverName=' + coverName;
             itemTitle.innerText = item.title;
 
 
